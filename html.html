@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="java.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/Logo.png">
+    </div>
+
+    <div class="main">
+        <div class="flex gapAti">
+            <input type="text" class="inputDiv inputTxt" placeholder="ცხოვრების რა ნაწილის დაგეგმვა გსურს?" value=""> 
+            <button class="buttonDiv buttonTxt">დამატება</button>
+        </div>
+
+        <div class="task">
+            <div class="task__header">
+                <div class="flex gapAti">
+                    <h2 class="infoTxt">დავალებები</h2>
+                    <input type="text" disabled class="counterTxt davalebebi" value="0">
+                </div>
+
+                <div class="flex gapAti">
+                    <h2 class="doneTxt">დასრულებული</h2>
+                    <input type="text" disabled class="counterTxt dasrulebuli" value="0">
+                </div>
+            </div>
+
+            <div class="task__tasks">
+                <div class="taskDiv" id="taskDivTemplate">
+                    <input type="checkbox" class="check">
+                    <input type="text" disabled class="flexOne" value="0">
+                    <button class="trash"></button>
+                </div>
+
+                <div class="finishedTaskDiv" id="finishedTaskDivTemplate">
+                    <input type="checkbox" class="check">
+                    <input type="text" disabled class="flexOne" value="0">
+                    <button class="trash"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
